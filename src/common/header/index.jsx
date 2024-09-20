@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import Logo from '../../../src/assets/logo/logo.png';
+import Logo from "../../assets/logo/logo.png";
 import './header.scss';
 import { FaCaretDown, FaRegUser } from "react-icons/fa6";
 import { BiSolidOffer } from "react-icons/bi";

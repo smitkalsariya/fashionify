@@ -1,0 +1,292 @@
+
+@import '../../styles/index.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+    .men-banner {
+        img {
+            width: 100%;
+            height: auto;
+            @media (max-width:420px) {
+                height: 280px;
+            }
+        }
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: hidden; 
+        position: relative; 
+      
+        .slick-slide {
+            img {
+                width: 300px;
+                height: auto;
+                
+            }
+        }
+
+        .slick-dots {
+            bottom: 5px; 
+        }
+
+        .slick-prev, .slick-next {
+            z-index: 1; 
+        }
+    }
+
+    .men-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        margin: 30px 10px; 
+
+        .men-grid-frist {
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 30px;
+                @media (max-width:420px) {
+                    height: 280px;
+                }
+            }
+        }
+    }
+
+    .poster {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            height: auto;
+            @media (max-width:420px) {
+                height: 280px;
+            }
+        }
+    }
+
+    .jens-slider {
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        .slick-slide {
+            padding: 0 15px; 
+            box-sizing: border-box; 
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    
+.men {
+  width: 100%; // Ensure the container takes full width
+  .men-search-main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    .men-search {
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+      @media (max-width: 500px) {
+        width: 80%;
+      }
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+      border: 1px solid #000;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 40%;
+      padding: 0 10px;
+      .search-input {
+        @media (max-width: 900px) {
+          padding: 10px 10px 10px 10px;
+        }
+        @media (max-width: 500px) {
+          padding: 8px 10px 8px 10px;
+        }
+        padding: 10px 10px 10px 10px;
+        background-color: transparent;
+        border: 0px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .men-search-icon {
+        @media (max-width: 900px) {
+          left: 72%;
+        }
+        @media (max-width: 768px) {
+          left: 71%;
+        }
+        @media (max-width: 600px) {
+          left: 70%;
+        }
+        @media (max-width: 500px) {
+          left: 69%;
+        }
+        @media (max-width: 400px) {
+          left: 68%;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+
+    .Men-item {
+        margin-left: 77px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+       
+
+        .Men-grid {
+      
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+          margin: 0 auto;
+
+
+
+          .Men-img {
+            position: relative;
+            border-radius: 10px;
+    
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+              opacity: 1;
+              transition: opacity 0.3s ease;
+              border-radius: inherit;
+    
+             
+            }
+    
+            &:hover {
+              cursor: pointer;
+            }
+    
+            &:hover img {
+              opacity: 0;
+            }
+           
+          }
+    
+          .Men-price-part {
+            padding-bottom: 10px;
+    
+            .Men-title {
+              font-size: 20px;
+              color: #000;
+            
+            }
+          }
+    
+          .Men-price-felx {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 10px;
+
+
+            .Men-price {
+              font-size: 20px;
+              color: var(--theme-price-color);
+    
+             
+            }
+    
+            del, span {
+              font-size: 20px;
+              color:var(--theme-black-text);
+            }
+          }
+    
+          .Men-size {
+            display: flex;
+            margin-left: 25px;
+            gap: 10px;
+            margin-bottom: 15px;
+    
+           
+    
+            p {
+              font-size: 14px;
+              border: 1px solid var(--theme-black-text);
+              border-radius: 5px;
+              padding: 4px 8px;
+              color: var(--theme-black-text);
+              transition: color 0.3s, background-color 0.3s; 
+              cursor: pointer;
+              user-select: none;
+    
+              &:hover {
+                color:var( --theme-white-text); 
+                background-color: var(--theme-footer-bg);
+              }
+            }
+          }
+    
+          .add-button {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-left: 90px;
+            margin-bottom: 20px;
+
+            .btn-footwear {
+              background-color: var(--theme-footer-bg);
+              color: var(--theme-white-text);
+              padding: 10px 20px;
+              border-radius: 5px;
+              border: none;
+              cursor: pointer;
+              height: 40px;
+            }
+    
+            .like-icon {
+              font-size: 30px;
+              color: var(--theme-footer-bg);
+            }
+          }
+        }
+      }
+    
+      .Men-img {
+        position: relative;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        width: 310px; /* Ensure width is set */
+        height: 400px; /* Adjust as needed */
+    
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+          border-radius: inherit;
+        }
+    
+        &:hover {
+          cursor: pointer;
+        }
+    
+        &:hover img {
+          opacity: 0;
+        }
+      }
+}

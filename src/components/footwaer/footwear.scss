@@ -1,0 +1,479 @@
+
+@import '../../styles/index.scss';
+
+.footwear {
+  .footwear-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    padding-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      padding-left: 20%;
+    }
+
+    @media (max-width: 576px) {
+      padding-left: 10%;
+    }
+
+    @media (max-width: 420px) {
+      padding-left: 5%;
+    }
+
+    @media (max-width: 320px) {
+      padding-left: 0;
+    }
+  }
+
+  .footwear-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 420px) {
+      gap: 20px;
+    }
+
+    .footwear-grid-first {
+
+      img {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+        opacity: 1;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-style: italic;
+
+        @media (max-width: 768px) {
+          margin-left: 30px;
+        }
+
+        @media (max-width: 576px) {
+          margin-left: 20px;
+        }
+
+        @media (max-width: 420px) {
+          margin-left: 10px;
+        }
+
+        @media (max-width: 320px) {
+          margin-left: 0;
+          font-size: 18px;
+        }
+      }
+
+      button {
+        background-color: var(--theme-footer-bg);
+        color: var(--theme-white-text);
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+
+        @media (max-width: 768px) {
+          margin-left: 5%;
+        }
+
+        @media (max-width: 576px) {
+          margin-left: 0;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+
+  .add-part {
+    img {
+      margin-left: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      @media (max-width:900px) {
+        margin-left: -2px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
+      @media (max-width: 840px) {
+        margin-left: 5px;
+      }
+
+      @media (max-width: 420px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .shoes-item {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    padding-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      padding-left: 20%;
+    }
+
+    @media (max-width: 576px) {
+      padding-left: 10%;
+    }
+
+    @media (max-width: 420px) {
+      padding-left: 5%;
+    }
+
+    @media (max-width: 320px) {
+      padding-left: 0;
+      font-size: 18px;
+    }
+  }
+
+  .shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 420px) {
+      gap: 20px;
+    }
+
+    .shoes-grid-first {
+      img {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+
+  .add-part-two {
+    img {
+      margin-left: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
+      @media (max-width: 840px) {
+        margin-left: 5px;
+      }
+      @media (max-width:900px) {
+        margin-left: -2px;
+      }
+
+      @media (max-width: 420px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .men-search-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .men-search {
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+      @media (max-width: 500px) {
+        width: 80%;
+      }
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+      border: 1px solid var(--theme-black-text);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 40%;
+      padding: 0 10px;
+      .search-input {
+        @media (max-width: 900px) {
+          padding: 10px 10px 10px 10px;
+        }
+        @media (max-width: 500px) {
+          padding: 8px 10px 8px 10px;
+        }
+        padding: 10px 10px 10px 10px;
+        background-color: transparent;
+        border: 0px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .men-search-icon {
+        @media (max-width: 900px) {
+          left: 72%;
+        }
+        @media (max-width: 768px) {
+          left: 71%;
+        }
+        @media (max-width: 600px) {
+          left: 70%;
+        }
+        @media (max-width: 500px) {
+          left: 69%;
+        }
+        @media (max-width: 400px) {
+          left: 68%;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footwear-shoes-item {
+    // margin-left: 77px;
+    // padding-bottom: 40px;
+    // margin-right: 16px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    .footwear-shoes-grid {
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+      // gap: 15px;
+
+      // @media (max-width: 768px) {
+      //   grid-template-columns: repeat(2, 1fr);
+      // }
+      // @media (max-width:900px) {
+      //   grid-template-columns: repeat(2, 1fr);
+      //   margin-left: 21px;
+      // }
+
+      // @media (max-width: 480px) {
+      //   grid-template-columns: 1fr;
+      //   margin-left: -36px;
+      // }
+      // @media screen and (max-width: 340px) {
+      //   grid-template-columns: 1fr;
+      //   margin-left: -56px;
+      // }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 0 auto;
+
+      .footwear-shoes-img {
+        position: relative;
+        border-radius: 10px;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          opacity: 1;
+          padding-bottom: 10px;
+          transition: opacity 0.3s ease;
+          border-radius: inherit;
+
+         
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover img {
+          opacity: 0;
+        }
+        // @media (max-width:320px) {
+        //   margin-left: -66px;
+        // }
+      }
+
+      .shoes-price-part {
+        padding-bottom: 10px;
+
+        .shoes-title {
+          font-size: 20px;
+          color: #000;
+       
+
+          // @media (max-width: 480px) {
+          //   font-size: 18px;
+          //   margin-left: 25px;
+          // }
+          // @media (max-width: 320px) {
+          //   margin-left: -51px;
+          // }
+        }
+      }
+
+      .shoes-price-felx {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 10px;
+
+        // @media (max-width: 420px) {
+        //   gap: 16px;
+        // }
+
+        // @media (max-width: 480px) {
+        //   margin-left: 8px;
+        // }
+
+        // @media (max-width: 320px) {
+        //   margin-left: -51px;
+        // }
+
+        .shoes-price {
+          font-size: 20px;
+          color: var( --theme-price-color);
+
+          // @media (max-width: 480px) {
+          //   font-size: 18px;
+          // }
+
+          // @media (max-width: 320px) {
+          //   font-size: 16px;
+          // }
+        }
+
+        del, span {
+          font-size: 20px;
+          color:var(--theme-black-text);
+        }
+      }
+
+      .shoes-size {
+        display: flex;
+        margin-left: 25px;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        // @media (max-width: 420px) {
+        //   margin-left: 22px;
+        // }
+
+        // @media (max-width: 320px) {
+        //   margin-left: -34px;
+        // }
+
+        p {
+          font-size: 14px;
+          border: 1px solid var(--theme-black-text);
+          border-radius: 5px;
+          padding: 4px 8px;
+          color: var(--theme-black-text);
+          transition: color 0.3s, background-color 0.3s; 
+          cursor: pointer;
+          user-select: none;
+
+          &:hover {
+            color: var(--theme-white-text); 
+            background-color: var(--theme-footer-bg);
+          }
+        }
+      }
+
+      .add-button {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-left: 90px;
+
+        // @media (max-width: 480px) {
+        //   margin-left: 61px;
+        // }
+
+        // @media (max-width: 420px) { 
+        //   margin-left: 50px;
+        // }
+
+        // @media (max-width: 320px) {
+        //   margin-left: 18px;
+        // }
+
+        .btn-footwear {
+          background-color: var(--theme-footer-bg);
+          color: var(--theme-white-text);
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          height: 40px;
+        }
+
+        .like-icon {
+          font-size: 30px;
+          color: var(--theme-footer-bg);
+        }
+      }
+    }
+  }
+
+  .footwear-shoes-img {
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 300px; /* Ensure width is set */
+    height: 400px; /* Adjust as needed */
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 1;
+      padding-bottom: 10px;
+      transition: opacity 0.3s ease;
+      border-radius: inherit;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover img {
+      opacity: 0;
+    }
+  }
+}

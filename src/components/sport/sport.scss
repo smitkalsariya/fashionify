@@ -1,0 +1,205 @@
+@import '../../styles/index.scss';
+
+.sport {
+  .sport-poster-img {
+    img {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+
+  .men-search-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+    .men-search {
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+
+      @media (max-width: 500px) {
+        width: 80%;
+      }
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+
+      border: 1px solid #000;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 40%;
+      padding: 0 10px;
+
+      .search-input {
+        @media (max-width: 900px) {
+          padding: 10px 10px 10px 10px;
+        }
+
+        @media (max-width: 500px) {
+          padding: 8px 10px 8px 10px;
+        }
+
+        padding: 10px 10px 10px 10px;
+        background-color: transparent;
+        border: 0px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .men-search-icon {
+        @media (max-width: 900px) {
+          left: 72%;
+        }
+
+        @media (max-width: 768px) {
+          left: 71%;
+        }
+
+        @media (max-width: 600px) {
+          left: 70%;
+        }
+
+        @media (max-width: 500px) {
+          left: 69%;
+        }
+
+        @media (max-width: 400px) {
+          left: 68%;
+        }
+
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .sport-item {
+    // margin-left: 77px;
+    padding-bottom: 40px;
+    // margin-right: 58px;
+    margin: 0 auto;
+
+    .sport-grid {
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .sport-img {
+        position: relative;
+        border-radius: 10px;
+
+        img {
+          width: 346px;
+          height: 412px;
+          display: block;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+          border-radius: inherit;
+
+        
+
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover img {
+          opacity: 0;
+        }
+
+
+      }
+
+      .sport-price-part {
+        padding-bottom: 10px;
+
+        .sport-title {
+          font-size: 20px;
+          padding-top: 15px;
+
+        }
+      }
+
+      .sport-price-felx {
+        display: flex;
+        gap: 20px;
+        margin-left: 105px;
+        padding-bottom: 10px;
+
+
+
+        .sport-price {
+          font-size: 20px;
+          color: var(--theme-price-color);
+
+          @media (max-width: 480px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 320px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .sport-size {
+        display: flex;
+        margin-left: 25px;
+        gap: 10px;
+        margin-bottom: 15px;
+
+
+
+        p {
+          font-size: 14px;
+          border: 1px solid var(--theme-black-text);
+          border-radius: 5px;
+          padding: 4px 8px;
+          color: var(--theme-black-text);
+          transition: color 0.3s, background-color 0.3s;
+          cursor: pointer;
+          user-select: none;
+
+          &:hover {
+            color: var(--theme-white-text);
+            background-color: var(--theme-footer-bg);
+          }
+        }
+      }
+
+      .add-button {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-left: 90px;
+
+
+        .btn-footwear {
+          background-color: var(--theme-footer-bg);
+          color: var(--theme-white-text);
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          height: 40px;
+        }
+
+        .like-icon {
+          font-size: 30px;
+          color: var(--theme-footer-bg);
+        }
+      }
+    }
+  }
+
+}

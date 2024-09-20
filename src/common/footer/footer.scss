@@ -1,0 +1,134 @@
+@import '../../styles/index.scss';
+
+.footer {
+    .footer-bg {
+        background: var(--theme-footer-bg);
+        padding: 30px 0;
+
+        .footer-grid {
+            padding-left: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width:840px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width:480px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .footer-sec {
+                h3 {
+                    color: var(--theme-white-text);
+                    padding-bottom: 15px;
+                    font-weight: 500;
+                }
+
+                a {
+                    color: var(--theme-white-text);
+                    line-height: 2.14;
+                }
+                @media (max-width: 768px) {
+                    padding-bottom:20px ;
+                }
+                @media (max-width:840px) {
+                    padding-bottom: 20px;
+                }
+                @media (max-width:480) {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .footer-sec-2 {
+                h3 {
+                    color: var(--theme-white-text);
+                    padding-bottom: 15px;
+                    font-weight: 500;
+                }
+
+                a {
+                    color: var(--theme-white-text);
+                    line-height: 2.14;
+                }
+                @media (max-width:480) {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .footer-sec-3 {
+                h3 {
+                    color: var(--theme-white-text);
+                    padding-bottom: 15px;
+                    font-weight: 500;
+                }
+
+                a {
+                    color: var(--theme-white-text);
+                    line-height: 2.14;
+                }
+                @media (max-width:480) {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .footer-sec-4 {
+                h3 {
+                    color: var(--theme-white-text);
+                    padding-bottom: 15px;
+                    font-weight: 500;
+                }
+
+                .footer-sec-4-icon {
+                    display: flex;
+                    padding-bottom: 30px;
+
+                    img {
+
+                        margin: 0 5px;
+                    }
+                }
+
+                p {
+                    color: var(--theme-white-text);
+                }
+            }
+
+            .footer-singup {
+                display: flex;
+                margin-top: 30px;
+
+                // width: 100%;
+                input {
+                    width: 65%;
+                    height: 40px;
+                    display: inline-block;
+                    margin-bottom: 0;
+                    background: var(--theme-white-text);
+                    color: var(--theme-black-text);
+                    border: 0;
+                    border-radius: 7px;
+                    border: 1px solid;
+                    text-indent: 10px;
+                }
+
+                #footer-subscribe {
+                    // border: 1px solid;
+                    margin-left: -30px;
+                    width: 25%;
+                    display: inline-block;
+                    background: var(--theme-footer-bg);
+                    color: var(--theme-white-text);
+                    border: 0;
+                    font-weight: 400;
+                    white-space: normal;
+                    border: 1px solid;
+                }
+            }
+        }
+
+    }
+}

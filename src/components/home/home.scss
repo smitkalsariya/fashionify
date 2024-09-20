@@ -1,0 +1,26 @@
+@import '../../styles/index.scss';
+
+.banner {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+
+    img {
+        width: 100%;
+    }
+}
+
+.btn-home {
+    background-color: var(--theme-footer-bg);
+    color: var(--theme-white-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 48%;
+    height: 50px;
+}

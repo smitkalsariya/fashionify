@@ -1,0 +1,95 @@
+@import '../../styles/index.scss';
+
+.back-btn{
+  margin: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  @media (max-width: 576px) {
+    margin: 10px;
+  }
+}
+h1{
+    text-align: center;
+    // @include font60;
+}
+
+.cart-card {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  .cart-card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .cart-card-details {
+    flex-grow: 1;
+    margin-left: 20px;
+
+    .cart-card-title {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .cart-card-size {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .cart-card-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+}
+.remove-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #c03;
+  }
+}
+
+  .cart-quantity {
+    display: flex;
+    align-items: center;
+
+    .quantity-input {
+      width: 40px;
+      text-align: center;
+      margin: 0 10px;
+    }
+
+    .decrease-btn,
+    .increase-btn {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+}

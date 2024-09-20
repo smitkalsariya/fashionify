@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import categoryApi from '../../categoryApi/categoryApi';
-import './productInformation.scss';
+import './ProductInformation.scss';
 import { IoChevronBackOutline } from "react-icons/io5";
 import toast from 'react-hot-toast';
 

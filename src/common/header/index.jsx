@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from "../../assets/logo/Logo.webp";
+// import Logo2x from "../../assets/logo/Logo@2x.webp";
 import './header.scss';
 import { FaCaretDown, FaRegUser } from "react-icons/fa6";
 import { BiSolidOffer } from "react-icons/bi";
@@ -60,7 +61,13 @@ function Header() {
         <div className='header-flex'>
           <div className='header-flex-logo'>
             <Link to={'/'} aria-label="Home">
-              <img src={Logo} alt="USPA Logo" /> 
+              <img 
+                src={Logo} 
+                // srcSet={`${Logo} 1x, ${Logo2x} 2x`}
+                alt="USPA Logo" 
+                width="150" 
+                height="50"
+              />
             </Link>
           </div>
           <div className='header-flex-grid'>

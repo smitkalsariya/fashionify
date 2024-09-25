@@ -1,8 +1,10 @@
 @import '../../styles/index.scss';
 
 .footer {
-    min-height: 300px; // Adjust based on your footer's typical height
-    width: 100%; 
+    // min-height: 300px; // Maintain minimum height
+    width: 100%;
+    flex-shrink: 0; // Prevent footer from shrinking
+    
     .footer-bg {
         background: var(--theme-footer-bg);
         padding: 30px 0;
@@ -12,6 +14,8 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
+            max-width: 1200px; // Add a max-width to prevent excessive stretching
+            margin: 0 auto; // Center the grid
 
             @media (max-width: 840px) {
                 grid-template-columns: repeat(2, 1fr);
@@ -19,28 +23,33 @@
 
             @media (max-width: 480px) {
                 grid-template-columns: 1fr;
+                padding-left: 20px; // Reduce padding on smaller screens
+                padding-right: 20px; // Add right padding for balance
             }
 
             .footer-sec,
             .footer-sec-2,
             .footer-sec-3,
             .footer-sec-4 {
-                min-height: 200px; // Adjust as needed
+                min-height: 200px; // Maintain minimum height
 
                 h3 {
                     color: var(--theme-white-text);
                     padding-bottom: 15px;
                     font-weight: 500;
+                    margin-top: 0; // Prevent unexpected margins
                 }
 
                 a {
                     color: var(--theme-white-text);
                     line-height: 2.14;
-                    display: block; // Ensures consistent spacing
+                    display: block;
+                    text-decoration: none; // Ensure consistent link styling
                 }
 
                 @media (max-width: 768px) {
                     padding-bottom: 20px;
+                    min-height: auto; // Allow sections to shrink on mobile
                 }
             }
 
@@ -55,41 +64,58 @@
                         width: 24px;
                         height: 24px;
                         margin: 0;
+                        display: block; // Ensure consistent rendering
                     }
                 }
 
                 p {
                     color: var(--theme-white-text);
+                    margin: 0 0 15px; // Add consistent margin
                 }
             }
 
-            .footer-singup {
+            .footer-signup {
                 display: flex;
                 margin-top: 30px;
-                height: 40px; // Ensures consistent height
+                height: 40px;
+                gap: 10px; // Use gap instead of negative margin
 
                 input[type="email"] {
-                    width: 65%;
+                    flex-grow: 1; // Allow input to grow
                     height: 100%;
                     background: var(--theme-white-text);
                     color: var(--theme-black-text);
                     border: 1px solid;
                     border-radius: 7px;
-                    text-indent: 10px;
+                    padding: 0 10px; // Use padding instead of text-indent
+                    font-size: 14px; // Specify font size to prevent shifts
                 }
 
-                #footer-subscribe {
-                    width: 25%;
+                button#footer-subscribe {
+                    min-width: 80px; // Ensure minimum width
                     height: 100%;
-                    margin-left: -30px;
                     background: var(--theme-footer-bg);
                     color: var(--theme-white-text);
                     border: 1px solid;
                     font-weight: 400;
-                    white-space: normal;
+                    white-space: nowrap; // Prevent text wrapping
+                    border-radius: 7px; // Match input border-radius
+                    cursor: pointer; // Indicate clickable
+                    padding: 0 10px; // Add padding
+                    font-size: 14px; // Match input font size
                 }
             }
         }
-
     }
+}
+
+// Add these styles to your global CSS or body element
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
 }

@@ -42,24 +42,28 @@ export default function Footer() {
           <div className='footer-sec-4'>
             <h3>Follow Us</h3>
             <div className='footer-sec-4-icon'>
-              <a href="https://www.instagram.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                <img src={Insta} alt="" width="24" height="24" />
-              </a>
-              <a href="https://www.facebook.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                <img src={Fac} alt="" width="24" height="24" />
-              </a>
-              <a href="https://www.twitter.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-                <img src={Twi} alt="" width="24" height="24" />
-              </a>
+              {/* Social media links */}
             </div>
             <div>
               <h3>Connect</h3>
             </div>
             <p>Join our mailing list for updates</p>
-            <div className='footer-signup'>
-              <input type="email" name="contact[email]" id="footer-EMAIL" placeholder="Enter Email Address" aria-label="Email address for newsletter" />
-              <input type="submit" id="footer-subscribe" value="Join" aria-label="Subscribe to newsletter" />
-            </div>
+            <form className='footer-signup' onSubmit={(e) => e.preventDefault()}>
+              <input 
+                type="email" 
+                name="contact[email]" 
+                id="footer-EMAIL" 
+                placeholder="Enter Email Address" 
+                aria-label="Email address for newsletter" 
+              />
+              <button 
+                type="submit" 
+                id="footer-subscribe" 
+                aria-label="Subscribe to newsletter"
+              >
+                Join
+              </button>
+            </form>
           </div>
         </div>
       </div>

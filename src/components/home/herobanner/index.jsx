@@ -1,4 +1,4 @@
-import Img from '../../../assets/image/home.png';
+import Img from '../../../assets/image/home.webp';
 import './herobanner.scss';
 export default function HeroBanner() {
 

@@ -2,7 +2,7 @@
 import './men.scss';
 import React, { useState, useMemo } from "react";
 import Slider from "react-slick";
-import Banner from '../../assets/image/men-banner.webp';
+// import Banner from '../../assets/image/men-banner.webp';
 import sale from '../../assets/image/sale.webp';
 import nwe from '../../assets/image/new arrlvals.webp';
 import shirts from '../../assets/image/shirts.webp';
@@ -120,7 +120,7 @@ export default function Men() {
     return (
         <div className='men'>
             <div className='men-banner'>
-                <img src={Banner} alt="Men's Banner" />
+                {/* <img src={Banner} alt="Men's Banner" /> */}
             </div>
 
             {/* Slider Section */}

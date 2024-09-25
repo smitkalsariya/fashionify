@@ -1053,6 +1053,7 @@ const categoryApi = [
         path: 'SPORT',
         product: [
             {
+                id:1001,
                 "image": sport1,
                 "name": "Brand Stripe Honeycomb T-Shirt",
                 "original_price": "₹ 1,759.00",
@@ -1061,6 +1062,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport1
             },
             {
+                "id": 1002,
                 "image": sport2,
                 "name": "Colour Block Slim Polo Shirt",
                 "original_price": "₹ 1,823.00",
@@ -1069,6 +1071,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport2
             },
             {
+                "id": 1003,
                 "image": sport3,
                 "name": "Small Logo Slim Fit Polo Shirt",
                 "original_price": "₹ 1,912.00",
@@ -1077,6 +1080,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport3
             },
             {
+                "id": 1004,
                 "image": sport4,
                 "name": "Tipped Collar Slim Fit Polo Shirt",
                 "original_price": "₹ 2,045.00",
@@ -1085,6 +1089,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport4
             },
             {
+                "id": 1005,
                 "image": sport5,
                 "name": "Brand Print Cotton Blend T-Shirt",
                 "original_price": "₹ 2,174.00",
@@ -1093,6 +1098,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport5
             },
             {
+                "id": 1006,
                 "image": sport6,
                 "name": "Slim Fit Honeycomb T-Shirt",
                 "original_price": "₹ 2,299.00",
@@ -1101,6 +1107,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport6
             },
             {
+                "id": 1007,
                 "image": sport7,
                 "name": "Print Slim Fit T-Shirt",
                 "original_price": "₹ 2,456.00",
@@ -1109,6 +1116,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport7
             },
             {
+                "id": 1008,
                 "image": sport8,
                 "name": "Logo Active Track Pants",
                 "original_price": "₹ 2,582.00",
@@ -1117,6 +1125,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport8
             },
             {
+                "id": 1009,
                 "image": sport9,
                 "name": "Solid Slim Fit Active Shorts",
                 "original_price": "₹ 2,699.00",
@@ -1125,6 +1134,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport9
             },
             {
+                "id": 1010,
                 "image": sport10,
                 "name": "Solid Slim Fit Active Shorts",
                 "original_price": "₹ 2,856.00",
@@ -1133,6 +1143,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport10
             },
             {
+                "id": 1011,
                 "image": sport11,
                 "name": "Solid Zipper Pocket Active Shorts",
                 "original_price": "₹ 2,912.00",
@@ -1141,6 +1152,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport11
             },
             {
+                "id": 1012,
                 "image": sport12,
                 "name": "Track Pants",
                 "original_price": "₹ 3,089.00",
@@ -1149,6 +1161,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport12
             },
             {
+                "id": 1013,
                 "image": sport13,
                 "name": "Appliqued Slim Polo Shirt",
                 "original_price": "₹ 3,149.00",
@@ -1157,6 +1170,7 @@ const categoryApi = [
                 "backgroundImage": backgroundsport13
             },
             {
+                "id": 1014,
                 "image": sport14,
                 "name": "Heathered Slim Fit Active Shorts",
                 "original_price": "₹ 3,239.00",

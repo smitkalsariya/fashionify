@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Logo from "../../assets/logo/Logo.png";
 import './header.scss';
@@ -16,7 +15,7 @@ function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
 
-  // Retrieve cart count from localStorage
+
   useEffect(() => {
     const cartData = JSON.parse(localStorage.getItem("cartData")) || [];
     setCartCount(cartData.length);
@@ -81,17 +80,11 @@ function Header() {
             <div className='header-flex-grid-user'>
               <FaRegHeart className='header-flex-grid-user-icon' />
             </div>
-            {/* <div className='header-flex-grid-user'>
+            <div className='header-flex-grid-user'>
             <FiShoppingCart className='header-flex-grid-user-icon' />
             <Link to={'/cart'}><div className="header-cart-count">{cartCount}</div></Link>
-          </div> */}
-            <Link to={'/cart'}>
-              <div className='header-flex-grid-user'>
-                <FiShoppingCart className='header-flex-grid-user-icon' />
-                <div className="header-cart-count">{cartCount}</div>
-              </div>
-            </Link>
-
+          </div>
+          
             <div className='header-flex-grid-user'>
               <Link to={'/Signup'}>
                 <FaRegUser className='header-flex-grid-user-icon' />

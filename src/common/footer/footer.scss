@@ -1,6 +1,8 @@
 @import '../../styles/index.scss';
 
 .footer {
+    height: 100%; 
+    width: 100%; 
     .footer-bg {
         background: var(--theme-footer-bg);
         padding: 30px 0;

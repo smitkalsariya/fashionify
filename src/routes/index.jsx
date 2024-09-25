@@ -17,10 +17,7 @@ const router = createBrowserRouter([
         path: "/Signup",
         element: <Signup/>,
     },
-    {
-        path: "/product",
-        element: <ProductPage/>
-    },
+    
     {
         path: "/",
         element: <DefaultLayout/>,
@@ -50,8 +47,12 @@ const router = createBrowserRouter([
                 element: <Cart />
             },
             {
+                path: "/product",
+                element: <ProductPage/>
+            },
+            {
                 path: "*",
-                element: <h1>Error: Page Not Found</h1>  // You can provide a better error page here
+                element: <h1>Error: Page Not Found</h1> 
             }
         ],
     }

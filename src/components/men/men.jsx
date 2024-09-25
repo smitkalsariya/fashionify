@@ -119,7 +119,6 @@ export default function Men() {
 
     return (
         <div className='men'>
-            {/* Banner Section */}
             <div className='men-banner'>
                 <img src={Banner} alt="Men's Banner" />
             </div>

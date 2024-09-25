@@ -6,7 +6,7 @@ import Twi from  '../../assets/icon/white-twitter.svg'
 
 export default function Footer() {
   return (
-    <footer className='footer' style={{ minHeight: '300px' }}>
+    <footer className='footer'>
       <div className='footer-bg'>
         <div className='footer-grid'>
           <div className='footer-sec'>

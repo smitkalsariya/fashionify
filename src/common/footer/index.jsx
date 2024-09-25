@@ -41,9 +41,9 @@ export default function Footer() {
           <div className='footer-sec-4'>
             <h3>Follow Us</h3>
             <div className='footer-sec-4-icon'>
-              <img src={Insta}></img>
-              <img src={Fac}></img>
-              <img src={Twi}></img>
+              <img src={Insta} alt="Instagram"></img>
+              <img src={Fac} alt="Facebook"></img>
+              <img src={Twi} alt="Twitter"></img>
             </div>
           <div>
             <h3>Connect</h3>

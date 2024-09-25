@@ -6,7 +6,7 @@ import Twi from  '../../assets/icon/white-twitter.svg'
 
 export default function Footer() {
   return (
-    <div className='footer'>
+    <footer className='footer' style={{ minHeight: '300px' }}>
       <div className='footer-bg'>
         <div className='footer-grid'>
           <div className='footer-sec'>
@@ -42,29 +42,28 @@ export default function Footer() {
           <div className='footer-sec-4'>
             <h3>Follow Us</h3>
             <div className='footer-sec-4-icon'>
-              <a href="https://www.instagram.com/yourcompany" target="_blank" rel="noopener noreferrer">
-                <img src={Insta} alt="Instagram"></img>
+              <a href="https://www.instagram.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                <img src={Insta} alt="" width="24" height="24" />
               </a>
-              <a href="https://www.facebook.com/yourcompany" target="_blank" rel="noopener noreferrer">
-                <img src={Fac} alt="Facebook"></img>
+              <a href="https://www.facebook.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                <img src={Fac} alt="" width="24" height="24" />
               </a>
-              <a href="https://www.twitter.com/yourcompany" target="_blank" rel="noopener noreferrer">
-                <img src={Twi} alt="Twitter"></img>
+              <a href="https://www.twitter.com/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                <img src={Twi} alt="" width="24" height="24" />
               </a>
             </div>
-          <div>
-            <h3>Connect</h3>
+            <div>
+              <h3>Connect</h3>
             </div>
             <p>Join our mailing list for updates</p>
-            <div className='footer-singup'>
-            <input type="email" name="contact[email]" id="footer-EMAIL" placeholder="Enter Email Address"></input>
-            <input type="submit" id="footer-subscribe" value="Join"></input>
+            <div className='footer-signup'>
+              <input type="email" name="contact[email]" id="footer-EMAIL" placeholder="Enter Email Address" aria-label="Email address for newsletter" />
+              <input type="submit" id="footer-subscribe" value="Join" aria-label="Subscribe to newsletter" />
             </div>
           </div>
         </div>
-
       </div>
-      
-    </div>
+    </footer>
   )
 }
+

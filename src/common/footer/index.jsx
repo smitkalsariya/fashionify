@@ -3,6 +3,7 @@ import './footer.scss';
 import Insta from '../../assets/icon/white-insta.svg'
 import Fac from '../../assets/icon/white-facebook.svg';
 import Twi from  '../../assets/icon/white-twitter.svg'
+
 export default function Footer() {
   return (
     <div className='footer'>
@@ -11,39 +12,45 @@ export default function Footer() {
           <div className='footer-sec'>
             <h3>Policies</h3>
             <div>
-              <a>Terms and Conditions</a>
+              <a href="/terms-and-conditions">Terms and Conditions</a>
             </div>
             <div>
-              <a>Delivery & Shipping</a>
+              <a href="/delivery-and-shipping">Delivery & Shipping</a>
             </div>
             <div>
-              <a>Return Policy</a>
+              <a href="/return-policy">Return Policy</a>
             </div>
             <div>
-              <a>Privacy Policy</a>
+              <a href="/privacy-policy">Privacy Policy</a>
             </div>
             <div>
-              <a>Frequently Asked Questions</a>
+              <a href="/faq">Frequently Asked Questions</a>
             </div>
           </div>
           <div className='footer-sec-2'>
             <h3>Let Us Help You</h3>
             <div>
-              <a>Contact Us</a>
+              <a href="/contact-us">Contact Us</a>
             </div>
           </div>
           <div className='footer-sec-3'>
             <h3>About Us</h3>
               <div>
-                <a>Our Story</a>
+                <a href="/our-story">Our Story</a>
               </div>
           </div>
           <div className='footer-sec-4'>
             <h3>Follow Us</h3>
             <div className='footer-sec-4-icon'>
-              <img src={Insta} alt="Instagram"></img>
-              <img src={Fac} alt="Facebook"></img>
-              <img src={Twi} alt="Twitter"></img>
+              <a href="https://www.instagram.com/yourcompany" target="_blank" rel="noopener noreferrer">
+                <img src={Insta} alt="Instagram"></img>
+              </a>
+              <a href="https://www.facebook.com/yourcompany" target="_blank" rel="noopener noreferrer">
+                <img src={Fac} alt="Facebook"></img>
+              </a>
+              <a href="https://www.twitter.com/yourcompany" target="_blank" rel="noopener noreferrer">
+                <img src={Twi} alt="Twitter"></img>
+              </a>
             </div>
           <div>
             <h3>Connect</h3>

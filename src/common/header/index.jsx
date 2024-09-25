@@ -15,7 +15,6 @@ function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
 
-
   useEffect(() => {
     const cartData = JSON.parse(localStorage.getItem("cartData")) || [];
     setCartCount(cartData.length);
@@ -39,8 +38,6 @@ function Header() {
   return (
     <header className='header'>
       <div className='container'>
-
-
         <div className={`sidenav ${isNavOpen ? "open" : ""}`}>
           <div className="closebtn" onClick={closeNav}>
             &times;
@@ -62,7 +59,7 @@ function Header() {
 
         <div className='header-flex'>
           <div className='header-flex-logo'>
-            <Link to={'/'}>
+            <Link to={'/'} aria-label="Home">
               <img src={Logo} alt="USPA Logo" /> 
             </Link>
           </div>
@@ -75,24 +72,29 @@ function Header() {
           </div>
           <div className='header-flex-grid-page'>
             <div className='header-flex-grid-user'>
-              <BiSolidOffer className='header-flex-grid-user-icon-offer' />
+              <Link to="/offers" aria-label="Offers">
+                <BiSolidOffer className='header-flex-grid-user-icon-offer' />
+              </Link>
             </div>
             <div className='header-flex-grid-user'>
-              <FaRegHeart className='header-flex-grid-user-icon' />
+              <Link to="/wishlist" aria-label="Wishlist">
+                <FaRegHeart className='header-flex-grid-user-icon' />
+              </Link>
             </div>
             <div className='header-flex-grid-user'>
-            <FiShoppingCart className='header-flex-grid-user-icon' />
-            <Link to={'/cart'}><div className="header-cart-count">{cartCount}</div></Link>
-          </div>
-          
+              <Link to='/cart' aria-label={`Shopping Cart (${cartCount} items)`}>
+                <FiShoppingCart className='header-flex-grid-user-icon' />
+                <div className="header-cart-count">{cartCount}</div>
+              </Link>
+            </div>
             <div className='header-flex-grid-user'>
-              <Link to={'/Signup'}>
+              <Link to='/Signup' aria-label="User Profile">
                 <FaRegUser className='header-flex-grid-user-icon' />
               </Link>
             </div>
-            <div className='header-menu' onClick={openNav}>
+            <button className='header-menu' onClick={openNav} aria-label="Open Navigation Menu">
               <MdOutlineMenu className='header-menu-icon' />
-            </div>
+            </button>
           </div>
         </div>
       </div>

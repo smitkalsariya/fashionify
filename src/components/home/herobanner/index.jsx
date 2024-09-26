@@ -5,13 +5,7 @@ export default function HeroBanner() {
     return (
         <div>
             <div className='banner'>
-                <img 
-                    src={Img} 
-                    alt="Home banner" 
-                    width="1920" 
-                    height="1080" 
-                    loading="eager"
-                />
+                <img src={Img} alt="Home banner" />
             </div>
         </div>
     );

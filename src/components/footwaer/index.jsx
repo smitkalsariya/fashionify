@@ -60,23 +60,7 @@ export default function Footwear() {
       <div className='footwear-title'>
         <h3>Handpicked Selections</h3>
       </div>
-      <div className='footwear-grid'>
-        <div className='footwear-grid-first'>
-          <img src={Imgone} alt="Work Smart, Walk Smart" />
-          <h3>WORK SMART, WALK SMART</h3>
-          <button className='btn-footwear'>Shop Now</button>
-        </div>
-        <div className='footwear-grid-first'>
-          <img src={Imgtwo} alt="Classic Whites" />
-          <h3>CLASSIC WHITES</h3>
-          <button className='btn-footwear'>Shop Now</button>
-        </div>
-        <div className='footwear-grid-first'>
-          <img src={Imgthree} alt="Rain Ready" />
-          <h3>RAIN READY</h3>
-          <button className='btn-footwear'>Shop Now</button>
-        </div>
-      </div>
+     
       <div className='add-part'>
         <img src={Add} alt="Add Banner" />
       </div>

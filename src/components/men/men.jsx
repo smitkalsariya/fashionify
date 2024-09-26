@@ -2,6 +2,7 @@
 import './men.scss';
 import React, { useState, useMemo } from "react";
 import Slider from "react-slick";
+// import Banner from '../../assets/image/Men-banner.webp';
 // import Banner from '../../assets/image/men-banner.webp';
 import sale from '../../assets/image/sale.webp';
 import nwe from '../../assets/image/new arrlvals.webp';
@@ -124,7 +125,7 @@ export default function Men() {
             </div>
 
             {/* Slider Section */}
-            <Slider {...settings}>
+            {/* <Slider {...settings}>
                 <div><img src={sale} alt="Sale Banner" /></div>
                 <div><img src={nwe} alt="New Arrivals" /></div>
                 <div><img src={shirts} alt="Shirts" /></div>
@@ -133,7 +134,7 @@ export default function Men() {
                 <div><img src={jeans} alt="Jeans" /></div>
                 <div><img src={shorts} alt="Shorts" /></div>
                 <div><img src={outerwear} alt="Outerwear" /></div>
-            </Slider>
+            </Slider> */}
 
             {/* Shirt Banner */}
             <div className='shirts-banner'>
@@ -141,11 +142,11 @@ export default function Men() {
             </div>
 
             {/* Grid Section */}
-            <div className='men-grid'>
+            {/* <div className='men-grid'>
                 <div className='men-grid-first'><img src={shirtadd} alt="Shirt Add" /></div>
                 <div className='men-grid-first'><img src={tshirt} alt="T-Shirt Add" /></div>
                 <div className='men-grid-first'><img src={shirtlogo} alt="Shirt Logo" /></div>
-            </div>
+            </div> */}
 
             {/* Poster Section */}
             <div className='poster'>
@@ -153,7 +154,7 @@ export default function Men() {
             </div>
 
             {/* Jeans Slider */}
-            <div className='jens-slider'>
+            {/* <div className='jens-slider'>
                 <Slider {...slider}>
                     <div><img src={jenas1} alt="Jeans 1" /></div>
                     <div><img src={jenas2} alt="Jeans 2" /></div>
@@ -161,7 +162,7 @@ export default function Men() {
                     <div><img src={jenas4} alt="Jeans 4" /></div>
                     <div><img src={jenas5} alt="Jeans 5" /></div>
                 </Slider>
-            </div>
+            </div> */}
 
             {/* Search Bar */}
             <div className="men-search-main">

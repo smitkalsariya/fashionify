@@ -376,6 +376,18 @@
             transform: translateY(-2px);
           }
         }
+        @media screen and (max-width: 1500px) {
+          right: 52px;
+        }
+        @media screen and (max-width: 868px) {
+          right: 85px;
+        }
+        // @media screen and (max-width: 1130px) {
+        //   right: 52px;
+        // }
+        // @media screen and (max-width: 1000px) {
+        //   right: 52px;
+        // }
       }
 
       .header-flex-grid-user {

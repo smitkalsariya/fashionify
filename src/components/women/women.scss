@@ -1,3 +1,4 @@
+
 @import '../../styles/index.scss';
 
 .women {
@@ -17,46 +18,98 @@
         }
     }
 
+    .women-search-main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding-top: 30px;
 
+        .women-search {
+            border: 1px solid #000;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 40%;
+            padding: 0 10px;
+            @media (max-width: 900px) {
+                width: 70%;
+              }
+        
+              @media (max-width: 500px) {
+                width: 80%;
+              }
+        
+              @media (max-width: 400px) {
+                width: 100%;
+              }
+        
 
-    .Women-item {
+            .search-input {
+                padding: 10px;
+                background-color: transparent;
+                border: 0px;
+                border-radius: 10px;
+                outline: none;
+                font-size: 16px;
+                font-weight: 500;
+                @media (max-width: 900px) {
+                    padding: 10px 10px 10px 10px;
+                  }
+          
+                  @media (max-width: 500px) {
+                    padding: 8px 10px 8px 10px;
+                  }
+            }
+
+            .women-search-icon {
+                cursor: pointer;
+                @media (max-width: 900px) {
+                    left: 72%;
+                  }
+          
+                  @media (max-width: 768px) {
+                    left: 71%;
+                  }
+          
+                  @media (max-width: 600px) {
+                    left: 70%;
+                  }
+          
+                  @media (max-width: 500px) {
+                    left: 69%;
+                  }
+          
+                  @media (max-width: 400px) {
+                    left: 68%;
+                  }
+          
+            }
+        }
+    }
+
+    .women-item {
         margin-left: 77px;
         padding-bottom: 40px;
-        margin-right: 58px;
+        margin: 0 auto;
 
-        .Women-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
+        .women-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
 
-            @media (max-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            @media (max-width: 480px) {
-                grid-template-columns: 1fr;
-                margin-left: -36px;
-            }
-
-            @media screen and (max-width: 340px) {
-                grid-template-columns: 1fr;
-                margin-left: -56px;
-            }
-
-            .Women-img {
+            .women-img {
                 position: relative;
                 border-radius: 10px;
 
                 img {
-                    width: 346px;
-                    height: 412px;
+                    width: 100%;
+                    height: auto;
                     display: block;
                     opacity: 1;
-                    // padding-bottom: 10px;
                     transition: opacity 0.3s ease;
                     border-radius: inherit;
-
-
                 }
 
                 &:hover {
@@ -66,78 +119,38 @@
                 &:hover img {
                     opacity: 0;
                 }
-
-                @media (max-width:320px) {
-                    margin-left: -66px;
-                }
             }
 
-            .Women-price-part {
+            .women-price-part {
                 padding-bottom: 10px;
 
-                .Women-title {
+                .women-title {
                     font-size: 20px;
-                    padding-top: 15px;
-                    @media (max-width: 480px) {
-                        font-size: 18px;
-                        margin-left: 3px;
-                    }
-
-                    @media (max-width: 320px) {
-                        margin-left: -51px;
-                    }
+                    color: #000;
                 }
             }
 
-            .Women-price-felx {
+            .women-price-flex {
                 display: flex;
                 gap: 20px;
-                margin-left: 24px;
                 padding-bottom: 10px;
 
-                @media (max-width: 420px) {
-                    gap: 16px;
-                }
-
-                @media (max-width: 480px) {
-                    margin-left: 90px;
-                }
-
-                @media (max-width: 320px) {
-                    margin-left: -51px;
-                }
-
-                .Women-price {
+                .women-price {
                     font-size: 20px;
-                    color:var(--theme-price-color);
-
-                    @media (max-width: 480px) {
-                        font-size: 18px;
-                    }
-
-                    @media (max-width: 320px) {
-                        font-size: 16px;
-                    }
+                    color: var(--theme-price-color);
                 }
+
                 del, span {
                     font-size: 20px;
                     color: var(--theme-black-text);
-                  }
+                }
             }
 
-            .Women-size {
+            .women-size {
                 display: flex;
                 margin-left: 25px;
                 gap: 10px;
                 margin-bottom: 15px;
-
-                @media (max-width: 420px) {
-                    margin-left: 22px;
-                }
-
-                @media (max-width: 320px) {
-                    margin-left: -34px;
-                }
 
                 p {
                     font-size: 14px;
@@ -145,13 +158,13 @@
                     border-radius: 5px;
                     padding: 4px 8px;
                     color: var(--theme-black-text);
-                    transition: color 0.3s, background-color 0.3s;
+                    transition: color 0.3s, background-color 0.3s; 
                     cursor: pointer;
                     user-select: none;
 
                     &:hover {
-                        color: var(--theme-white-text);
-                        background-color: var( --theme-footer-bg);
+                        color: var(--theme-white-text); 
+                        background-color: var(--theme-footer-bg);
                     }
                 }
             }
@@ -161,26 +174,11 @@
                 gap: 20px;
                 align-items: center;
                 margin-left: 90px;
-
-                @media (max-width: 480px) {
-                    margin-left: 61px;
-                }
-
-                @media (max-width: 420px) {
-                    margin-left: 50px;
-                }
-
-                @media (max-width: 380px) {
-                    margin-left: 80px;
-                }
-
-                @media (max-width: 320px) {
-                    margin-left: 18px;
-                }
+                margin-bottom: 20px;
 
                 .btn-footwear {
-                    background-color: var( --theme-footer-bg);
-                    color:var(--theme-white-text);
+                    background-color: var(--theme-footer-bg);
+                    color: var(--theme-white-text);
                     padding: 10px 20px;
                     border-radius: 5px;
                     border: none;
@@ -190,11 +188,18 @@
 
                 .like-icon {
                     font-size: 30px;
-                    color:var(--theme-footer-bg);
+                    color: var(--theme-footer-bg);
                 }
             }
         }
     }
 
+    .women-img {
+        position: relative;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        width: 310px; /* Ensure width is set */
+        height: 400px; /* Adjust as needed */
+    }
 }
-

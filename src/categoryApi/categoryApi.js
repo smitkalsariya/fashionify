@@ -134,6 +134,35 @@ import Img47 from '../assets/image/men-47.webp';
 import Img48 from '../assets/image/men-48.webp';
 import Img49 from '../assets/image/men-49.webp';
 
+import women1 from '../assets/image/women-1.webp';
+import women2 from '../assets/image/women-2.webp';
+import women3 from '../assets/image/women-3.webp';
+import women4 from '../assets/image/women-4.webp';
+import women5 from '../assets/image/women-5.webp';
+import women6 from '../assets/image/women-6.webp';
+import women7 from '../assets/image/women-7.webp';
+import women8 from '../assets/image/women-8.webp';
+import women9 from '../assets/image/women-9.webp';
+import women10 from '../assets/image/women-10.webp';
+import women11 from '../assets/image/women-11.jpg';
+import women12 from '../assets/image/women-12.webp';
+import women13 from '../assets/image/women-13.webp';
+import women14 from '../assets/image/women-14.webp';
+import women15 from '../assets/image/women-15.jpg';
+import women16 from '../assets/image/women-16.webp';
+import women17 from '../assets/image/women-17.jpg';
+import women18 from '../assets/image/women-18.webp';
+import women19 from '../assets/image/women-19.webp';
+import women20 from '../assets/image/women-20.jpg';
+import women21 from '../assets/image/women-21.webp';
+import women22 from '../assets/image/women-22.webp';
+import women23 from '../assets/image/women-23.webp';
+import women24 from '../assets/image/women-24.webp';
+import women25 from '../assets/image/women-25.webp';
+import women26 from '../assets/image/women-26.webp';
+import women27 from '../assets/image/women-27.webp';
+
+
 import backgroundImgMen1 from '../assets/image/m-1.jpg'
 import backgroundImgMen2 from '../assets/image/m-1.jpg'
 import backgroundImgMen3 from '../assets/image/m-1.jpg'
@@ -184,6 +213,33 @@ import backgroundImgMen47 from '../assets/image/m-47.webp'
 import backgroundImgMen48 from '../assets/image/m-48.jpg'
 import backgroundImgMen49 from '../assets/image/m-49.webp'
 
+import backgroundImgWomen1 from '../assets/image/w-1.webp';
+import backgroundImgWomen2 from '../assets/image/w-2.webp';
+import backgroundImgWomen3 from '../assets/image/w-3.webp';
+import backgroundImgWomen4 from '../assets/image/w-4.webp';
+import backgroundImgWomen5 from '../assets/image/w-5.webp';
+import backgroundImgWomen6 from '../assets/image/w-6.webp';
+import backgroundImgWomen7 from '../assets/image/w-7.webp';
+import backgroundImgWomen8 from '../assets/image/w-8.webp';
+import backgroundImgWomen9 from '../assets/image/w-9.jpg';
+import backgroundImgWomen10 from '../assets/image/w-10.webp';
+import backgroundImgWomen11 from '../assets/image/w-11.webp';
+import backgroundImgWomen12 from '../assets/image/w-12.webp';
+import backgroundImgWomen13 from '../assets/image/w-13.webp';
+import backgroundImgWomen14 from '../assets/image/w-14.webp';
+import backgroundImgWomen15 from '../assets/image/w-15.webp';
+import backgroundImgWomen16 from '../assets/image/w-16.webp';
+import backgroundImgWomen17 from '../assets/image/w-17.webp';
+import backgroundImgWomen18 from '../assets/image/w-18.webp';
+import backgroundImgWomen19 from '../assets/image/w-19.webp';
+import backgroundImgWomen20 from '../assets/image/w-20.webp';
+import backgroundImgWomen21 from '../assets/image/w-21.webp';
+import backgroundImgWomen22 from '../assets/image/w-22.webp';
+import backgroundImgWomen23 from '../assets/image/w-23.webp';
+import backgroundImgWomen24 from '../assets/image/w-24.jpg';
+import backgroundImgWomen25 from '../assets/image/w-25.webp';
+import backgroundImgWomen26 from '../assets/image/w-26.webp';
+import backgroundImgWomen27 from '../assets/image/w-27.webp';
 
 // import { MdOutlineFavoriteBorder } from "react-icons/md";
 
@@ -750,7 +806,332 @@ const categoryApi = [
     {
         category: 'WOMEN',
         path: 'WOMEN',
-        product: []
+        product: [
+            {
+                id : 1111, 
+                image: women1,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen1,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 2222, 
+                image: women2,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen2,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 3333, 
+                image: women3,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",    
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen3,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 4444, 
+                image: women4,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen4,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 5555, 
+                image: women5,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen5,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 6666, 
+                image: women6,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen6,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 7777, 
+                image: women7,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen7,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 8888, 
+                image: women8,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen8,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 9999, 
+                image: women9,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen9,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 101010, 
+                image: women10,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen10,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 111111, 
+                image: women11,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen11,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 121212, 
+                image: women12,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen12,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },  
+            {
+                id : 131313, 
+                image: women13,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen13,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 141414, 
+                image: women14,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen14,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 151515, 
+                image: women15,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen15,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },  
+            {
+                id : 161616, 
+                image: women16,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                    cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen16,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 171717, 
+                image: women17,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen17,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+                },
+            {
+                id : 181818, 
+                image: women18,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                    cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen18,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 191919, 
+                image: women19,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen19,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 202020, 
+                image: women20,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen20,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 212121, 
+                image: women21,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen21,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 222222, 
+                image: women22,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen22,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 232323,                
+                image: women23,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen23,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 242424,                
+                image: women24,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen24,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 252525,                
+                image: women25,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",    
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen25,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 262626,                
+                image: women26,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",                  
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen26,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+            {
+                id : 272727,                
+                image: women27,
+                name: "Casual Slim Fit Shirt",
+                discounted_price: "₹ 3,099",
+                original_price: "₹ 4,499",                  
+                offer: "31% off",
+                cart: "Add to Cart",
+                favicon: MdOutlineFavoriteBorder,
+                backgroundImage: backgroundImgWomen27,
+                description:"| Button-down collar | Chest patch pocket | Full button placket | Long sleeves with rounded cuffs | Curved hemline | Solid pattern | Regular weave | Brand fit: Tailored fit | Fit mapping: Regular fit"
+            },
+        ]
     },
     {
         category: 'FOOTWEAR',

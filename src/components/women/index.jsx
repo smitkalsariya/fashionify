@@ -1,97 +1,18 @@
-
-
-// import './women.scss';
-// import Banner from '../../assets/image/w-banner.webp';
-// import Bannertwo from '../../assets/image/women-banner-two.webp';
-// import categoryApi from '../../categoryApi/categoryApi';
-// import { useState, useEffect } from 'react';
-// import { BsSearch } from 'react-icons/bs';
-
-// export default function Women() {
-//     const [searchTerm, setSearchTerm] = useState("");
-//     const [filteredProducts, setFilteredProducts] = useState(categoryApi[1].product);
-
-//     useEffect(() => {
-//         const filtered = categoryApi[1].product.filter(
-//             (product) =>
-//                 product.name && product.name.toUpperCase().includes(searchTerm.toUpperCase())
-//         );
-//         setFilteredProducts(filtered);
-//     }, [searchTerm]);
-
-//     return (
-//         <div className='women'>
-//             <div className='women-banner'>
-//                 <img src={Banner} alt="Banner" />
-//             </div>
-//             <div className='women-banner-two'>
-//                 <img src={Bannertwo} alt="Banner Two" />
-//             </div>
-//             <div className="women-search-main">
-//                 <div className="women-search">
-//                     <input
-//                         type="text"
-//                         placeholder="Search"
-//                         className="search-input"
-//                         value={searchTerm}
-//                         onChange={(e) => setSearchTerm(e.target.value)}
-//                     />
-//                     <p className="women-search-icon">
-//                         <BsSearch />
-//                     </p>
-//                 </div>
-//             </div>
-//             <div className='women-item'>
-//                 <div className='women-grid'>
-//                     {filteredProducts.length > 0 ? (
-//                         filteredProducts.map((item) => (
-//                             <div key={item.name} className='women-card'>
-//                                 <div
-//                                     className='women-img'
-//                                     style={{ backgroundImage: `url(${item.backgroundImage})` }}
-//                                 >
-//                                     <img src={item.image} alt={item.name} />
-//                                 </div>
-//                                 <div className='women-price-part'>
-//                                     <h3 className='women-title'>{item.name}</h3>
-//                                 </div>
-//                                 <div className='women-price-flex'>
-//                                     <p className='women-price'>{item.discounted_price}</p>
-//                                     <del>{item.original_price}</del>
-//                                     <span>{item.offer}</span>
-//                                 </div>
-//                                 <div className="women-size">
-//                                     <p>39</p><p>40</p><p>42</p><p>44</p><p>46</p>
-//                                 </div>
-//                                 <div className='add-button'>
-//                                     <button className='btn-footwear'>{item.cart}</button>
-//                                     <div className='like-icon'>
-//                                         <item.favicon />
-//                                     </div>
-//                                 </div>
-//                             </div>
-//                         ))
-//                     ) : (
-//                         <p>No products found for the search term.</p>
-//                     )}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-
 import './women.scss';
+import React, { useState, useMemo } from 'react';
 import Banner from '../../assets/image/w-banner.webp';
 import Bannertwo from '../../assets/image/women-banner-two.webp';
 import categoryApi from '../../categoryApi/categoryApi';
-import { useState, useMemo } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import toast from 'react-hot-toast';
 
 export default function Women() {
     const [searchTerm, setSearchTerm] = useState("");
+
+    // Log the categoryApi data to check if it's populated
+    console.log("categoryApi data:", categoryApi);
 
     // Handle search input
     const handleSearch = (e) => {
@@ -111,6 +32,9 @@ export default function Women() {
         );
     }, [searchTerm]);
 
+    // Log the filtered products to check if filtering is working correctly
+    console.log("Filtered Products:", filteredProducts);
+
     const openDetails = (id) => {
         if (id) {
             localStorage.setItem("id", JSON.stringify(id));
@@ -118,23 +42,25 @@ export default function Women() {
     };
 
     const handleAddToCart = (id) => {
-        const cartData = JSON.parse(localStorage.getItem("CartData")) || [];
-        if (!cartData.includes(id)) {
-            cartData.push(id);
-            localStorage.setItem("CartData", JSON.stringify(cartData));
-            console.log("Item added to cart:", id);
+        const cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+        if (cartData.includes(id)) {
+            console.log('Item already in cart');
+            toast.error("Item already in cart");
         } else {
-            console.error("Item already in cart");
+            cartData.push(id);
+            localStorage.setItem('cartData', JSON.stringify(cartData));
+            console.log('Successfully added to cart');
+            toast.success("Successfully added to cart");
         }
     };
 
     return (
         <div className='women'>
             <div className='women-banner'>
-                <img src={Banner} alt="Banner" />
+                <img src={Banner} alt="Women Banner" />
             </div>
             <div className='women-banner-two'>
-                <img src={Bannertwo} alt="Banner Two" />
+                <img src={Bannertwo} alt="Women Banner Two" />
             </div>
 
             {/* Search Bar */}
@@ -156,14 +82,15 @@ export default function Women() {
                 <div className='women-grid'>
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((item) => (
-                            <Link
-                                to={`/product`}
-                                onClick={() => openDetails(item.id)}
-                                key={item.id}
-                                className='women-card'>
-                                <div className='women-img' style={{ backgroundImage: `url(${item.backgroundImage || item.image})` }}>
-                                    <img src={item.image} alt={item.name || "Product"} />
-                                </div>
+                            <div key={item.id}>
+                                <Link
+                                    to={`/product`}
+                                    onClick={() => openDetails(item.id)}
+                                    className='women-card'>
+                                    <div className='women-img' style={{ backgroundImage: `url(${item.backgroundImage || item.image})` }}>
+                                        <img src={item.image} alt={item.name || "Product"} />
+                                    </div>
+                                </Link>
                                 <div className='women-price-part'>
                                     <h3 className='women-title'>{item.name || "Unknown Product"}</h3>
                                 </div>
@@ -181,7 +108,7 @@ export default function Women() {
                                         <MdOutlineFavoriteBorder />
                                     </div>
                                 </div>
-                            </Link>
+                            </div>
                         ))
                     ) : (
                         <p>No products found for the search term.</p>

@@ -14,10 +14,22 @@ const categoryName = clothesApi;
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
-    const cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-    setCartCount(cartData.length);
+    const updateCartCount = () => {
+      const cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+      setCartCount(cartData.length);
+    };
+
+    updateCartCount();
+    window.addEventListener('storage', updateCartCount);
+    window.addEventListener('cartChange', updateCartCount);
+
+    return () => {
+      window.removeEventListener('storage', updateCartCount);
+      window.removeEventListener('cartChange', updateCartCount);
+    };
   }, []);
 
   const openNav = () => {
@@ -30,7 +42,6 @@ function Header() {
     setIsNavOpen(false);
   };
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -60,7 +71,7 @@ function Header() {
         <div className='header-flex'>
           <div className='header-flex-logo'>
             <Link to={'/'} aria-label="Home">
-              <img src={Logo} alt="USPA Logo" /> 
+              <img src={Logo} alt="USPA Logo" width="150" height="50" /> 
             </Link>
           </div>
           <div className='header-flex-grid'>
@@ -92,12 +103,9 @@ function Header() {
                 <FaRegUser className='header-flex-grid-user-icon' />
               </Link>
             </div>
-            {/* <button className='header-menu' onClick={openNav} aria-label="Open Navigation Menu">
+            <button className='header-menu' onClick={openNav} aria-label="Open Navigation Menu">
               <MdOutlineMenu className='header-menu-icon' />
-            </button> */}
-              <div className='header-menu' onClick={openNav}>
-              <MdOutlineMenu className='header-menu-icon' />
-            </div>
+            </button>
           </div>
         </div>
       </div>

@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import categoryApi from '../../categoryApi/categoryApi';
 import '../../components/ProductInformation/ProductInformation.scss';
 import { IoChevronBackOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const [cartData, setCartData] = useState(
-    JSON.parse(localStorage.getItem("cartData")) || []
-  );
+  const [cartData, setCartData] = useState([]);
+
+  useEffect(() => {
+    const storedCartData = JSON.parse(localStorage.getItem("cartData")) || [];
+    setCartData(storedCartData);
+  }, []);
 
   // Combine all products from different indices of categoryApi
   const products = categoryApi.reduce((acc, category) => {
@@ -21,10 +25,16 @@ const Cart = () => {
     const updatedCart = cartData.filter((cartItemId) => cartItemId !== id);
     setCartData(updatedCart);
     localStorage.setItem("cartData", JSON.stringify(updatedCart));
+
+    // Dispatch a custom event to notify other components of the cart update
+    window.dispatchEvent(new Event('cartUpdated'));
   };
 
   return (
     <>
+      <Link to="/" className="back-button">
+        <IoChevronBackOutline /> Back to Home
+      </Link>
       {/* Check if there are any items in the cart */}
       {data.length === 0 ? (
         <p className='empty'>Your cart is empty.</p>

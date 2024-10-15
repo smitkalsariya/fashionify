@@ -8,6 +8,7 @@ import Sport from "../components/sport";
 import Women from "../components/women";
 import Cart from "../common/cart";
 import ProductPage from "../components/ProductInformation";
+import Wishlist from "../common/wishlist";
 
 
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />
+            },
+            {
+                path: "/wishlist",
+                element: <Wishlist/>
             },
             {
                 path: "/product",

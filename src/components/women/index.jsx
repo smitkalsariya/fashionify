@@ -1,15 +1,24 @@
 import './women.scss';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Banner from '../../assets/image/w-banner.webp';
 import Bannertwo from '../../assets/image/women-banner-two.webp';
 import categoryApi from '../../categoryApi/categoryApi';
 import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { MdOutlineFavoriteBorder, MdFavorite } from "react-icons/md";
 import toast from 'react-hot-toast';
 
 export default function Women() {
     const [searchTerm, setSearchTerm] = useState("");
+    const [wishlist, setWishlist] = useState(() => {
+        // Retrieve wishlist from localStorage when the component loads
+        return JSON.parse(localStorage.getItem("wishlistData")) || [];
+    });
+
+    // Sync wishlist with local storage whenever it changes
+    useEffect(() => {
+        localStorage.setItem("wishlistData", JSON.stringify(wishlist));
+    }, [wishlist]);
 
     // Log the categoryApi data to check if it's populated
     console.log("categoryApi data:", categoryApi);
@@ -52,6 +61,18 @@ export default function Women() {
             console.log('Successfully added to cart');
             toast.success("Successfully added to cart");
         }
+    };
+
+    // Add or remove item from the wishlist
+    const toggleWishlist = (id) => {
+        setWishlist((prevWishlist) => {
+            const updatedWishlist = prevWishlist.includes(id)
+                ? prevWishlist.filter((itemId) => itemId !== id) // Remove item from wishlist
+                : [...prevWishlist, id]; // Add item to wishlist
+
+            toast.success(prevWishlist.includes(id) ? "Removed from wishlist" : "Added to wishlist");
+            return updatedWishlist;
+        });
     };
 
     return (
@@ -104,8 +125,12 @@ export default function Women() {
                                 </div>
                                 <div className='add-button'>
                                     <button className='btn-footwear' onClick={() => handleAddToCart(item.id)}>{item.cart || "Add to Cart"}</button>
-                                    <div className='like-icon'>
-                                        <MdOutlineFavoriteBorder />
+                                    <div className='like-icon' onClick={() => toggleWishlist(item.id)}>
+                                        {wishlist.includes(item.id) ? (
+                                            <MdFavorite className="wishlist-icon active" /> // Filled heart when in wishlist
+                                        ) : (
+                                            <MdOutlineFavoriteBorder className="wishlist-icon" /> // Empty heart when not in wishlist
+                                        )}
                                     </div>
                                 </div>
                             </div>

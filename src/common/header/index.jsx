@@ -83,9 +83,9 @@ function Header() {
           </div>
           <div className='header-flex-grid-page'>
             <div className='header-flex-grid-user'>
-              <Link to="/offers" aria-label="Offers">
+              {/* <Link to="/offers" aria-label="Offers">
                 <BiSolidOffer className='header-flex-grid-user-icon-offer' />
-              </Link>
+              </Link> */}
             </div>
             <div className='header-flex-grid-user'>
               <Link to="/wishlist" aria-label="Wishlist">

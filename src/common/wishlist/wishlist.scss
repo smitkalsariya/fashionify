@@ -1,0 +1,72 @@
+@import '../../styles/index.scss';
+.wishlist-page {
+    padding: 20px;
+    background-color: #f9f9f9; // Light background color for contrast
+    text-align: center; // Center text for headers
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; // Dark text color
+}
+
+.wishlist-grid {
+    display: flex; // Use flexbox for layout
+    flex-wrap: wrap; // Allow wrapping to the next line
+    justify-content: center; // Center items horizontally
+    gap: 15px; // Space between items
+}
+
+.wishlist-card {
+    background-color: #fff; // White background for cards
+    border: 1px solid #ddd; // Light gray border for card
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+    overflow: hidden; // Ensures content fits nicely within the card
+    transition: transform 0.2s; // Smooth scaling effect
+    flex: 0 1 calc(25% - 15px); // Base size of card is 25% of the container width minus the gap
+    max-width: calc(25% - 15px); // Maximum width for the card
+}
+
+.wishlist-card:hover {
+    transform: scale(1.05); // Slightly enlarge card on hover
+}
+
+.card-image img {
+    width: 100%; // Full width for images
+    height: auto; // Maintain aspect ratio
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 18px; // Font size for product name
+    color: #555; // Gray text color
+    margin: 10px 0; // Margin for spacing
+}
+
+.price {
+    font-size: 16px; // Font size for price
+    color: #b12704; // Price color (Amazon-style)
+}
+
+.card-actions {
+    margin-top: 10px; // Margin for actions
+}
+
+.remove-btn {
+    background-color: #e74c3c; // Red background for remove button
+    color: white; // White text
+    border: none; // No border
+    padding: 10px 15px; // Padding for button
+    border-radius: 5px; // Rounded corners
+    cursor: pointer; // Pointer cursor on hover
+    transition: background-color 0.2s; // Transition for background color
+}
+
+.remove-btn:hover {
+    background-color: #c0392b; // Darker red on hover
+}

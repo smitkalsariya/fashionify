@@ -103,7 +103,8 @@ function Header() {
                 <FaRegUser className='header-flex-grid-user-icon' />
               </Link>
             </div>
-            <button className='header-menu' onClick={openNav} aria-label="Open Navigation Menu">
+            <button 
+            className='header-menu' onClick={openNav} aria-label="Open Navigation Menu">
               <MdOutlineMenu className='header-menu-icon' />
             </button>
           </div>

@@ -46,15 +46,18 @@ export default function Men() {
     };
 
     const handleAddToCart = (id) => {
-        const cartData = JSON.parse(localStorage.getItem('CartData')) || [];
+        const cartData = JSON.parse(localStorage.getItem('cartData')) || []; // Ensure 'cartData' is used
         if (cartData.includes(id)) {
-            console.error('Item already in cart'); // Error handling
+            console.error('Item already in cart');
             toast.error("Item already in cart");
         } else {
             cartData.push(id);
-            localStorage.setItem('CartData', JSON.stringify(cartData));
-            console.log('Successfully added to cart'); // Success handling
+            localStorage.setItem('cartData', JSON.stringify(cartData)); // Ensure consistent key 'cartData'
+            console.log('Successfully added to cart');
             toast.success("Successfully added to cart");
+
+            // Dispatch a custom event to notify other components
+            window.dispatchEvent(new Event('cartUpdated'));
         }
     };
 

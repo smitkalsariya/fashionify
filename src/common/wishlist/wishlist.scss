@@ -25,8 +25,12 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
     overflow: hidden; // Ensures content fits nicely within the card
     transition: transform 0.2s; // Smooth scaling effect
-    flex: 0 1 calc(25% - 15px); // Base size of card is 25% of the container width minus the gap
+    // flex: 0 1 calc(25% - 15px); // Base size of card is 25% of the container width minus the gap
     max-width: calc(25% - 15px); // Maximum width for the card
+    // width: 100%;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 
 .wishlist-card:hover {
